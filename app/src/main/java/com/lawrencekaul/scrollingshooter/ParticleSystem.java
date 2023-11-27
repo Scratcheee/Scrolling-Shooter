@@ -1,6 +1,7 @@
 package com.lawrencekaul.scrollingshooter;
 
 import android.graphics.PointF;
+import java.security.SecureRandom;
 
 import java.util.ArrayList;
 import java.util.Random;
@@ -9,7 +10,7 @@ class ParticleSystem {
 	
 	float mDuration;
 	ArrayList<Particle> mParticles;
-	Random random = new Random();
+	Random random = new SecureRandom();
 	boolean mIsRunning = false;
 	
 	void init(int numParticles) {
